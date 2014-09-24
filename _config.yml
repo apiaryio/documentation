@@ -9,7 +9,7 @@ ubuntu_version: trusty
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: '' # an empty string here means all files in the project
       type: posts
     values:
       layout: page
@@ -57,7 +57,46 @@ prose:
     - /_includes
   metadata:
     _posts:
-      - name: "layout"
+      - name: 'layout'
         field:
-          element: "hidden"
-          value: "page"
+          element: 'hidden'
+          value: 'page'
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Page Title'
+      - name: 'categories'
+        field:
+          type: 'select'
+          label: 'Category'
+          options:
+            - name: 'Project Administration'
+              value: 'administration'
+            - name: 'Analytics'
+              value: 'analytics'
+            - name: 'Continuous Deployment'
+              value: 'continuous-deployment'
+            - name: 'Continuous Integration'
+              value: 'continuous-integration'
+            - name: 'Databases'
+              value: 'databases'
+            - name: 'FAQ'
+              value: 'faq'
+            - name: Integrations'
+              value: 'integrations'
+            - name: 'Languages & Services'
+              value: 'languages'
+            - name: 'Queues'
+              value: queues
+            - name: 'Security & Privacy'
+              value: security
+            - name: 'Services'
+              value: services
+            - name: 'Tutorials'
+              value: tutorials
+      - name: 'tags'
+        field:
+            element: 'multiselect'
+            label: 'Tags'
+            alterable: true
+            options:
