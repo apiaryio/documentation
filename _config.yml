@@ -44,3 +44,20 @@ kramdown:
   coderay:
     coderay_line_numbers:      table
     coderay_css:               class
+
+# Prose.io
+prose:
+  rooturl: '_posts'
+  siteurl: 'https://codeship.io/documentation/'
+  media: 'images'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
